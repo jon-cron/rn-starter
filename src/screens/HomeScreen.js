@@ -2,11 +2,11 @@ import React from "react";
 import { Text, StyleSheet } from "react-native";
 
 const HomeScreen = () => {
-  return <Text style={styles.text}>Screen</Text>;
+  return <Text style={styles.textStyle}>Screen</Text>;
 };
 
 const styles = StyleSheet.create({
-  text: {
+  textStyle: {
     fontSize: 30,
   },
 });
