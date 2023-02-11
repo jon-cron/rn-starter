@@ -13,9 +13,9 @@ const navigator = createStackNavigator(
   },
   {
     // NOTE initialRouteName tells the app what to show by default upon opening
-    initialRouteName: "List",
+    initialRouteName: "Home",
     defaultNavigationOptions: {
-      title: "App",
+      title: "React Native Starter",
     },
   }
 );

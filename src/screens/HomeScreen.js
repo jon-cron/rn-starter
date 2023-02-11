@@ -1,8 +1,21 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 
 const HomeScreen = () => {
-  return <Text style={styles.textStyle}>Screen</Text>;
+  return (
+  <View>
+    <Text style={styles.textStyle}>Home Screen</Text>
+    {/* NOTE buttons are self closing and must have a title */}
+    <Button
+    // NOTE onPress invokes a function
+      onPress={()=> console.log("button press")}
+      title="Go To Components Demo"/>
+      <TouchableOpacity
+        onPress={()=> console.log("go to list")}>
+        <Text>Go To List Demo</Text>
+      </TouchableOpacity>
+  </View>
+    );
 };
 
 const styles = StyleSheet.create({
