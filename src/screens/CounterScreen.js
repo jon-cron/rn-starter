@@ -5,17 +5,17 @@ import { View, Text, StyleSheet, TouchableOpacity, Button } from 'react-native';
 const reducer = (state, action) => {
   switch(action.type){
     case "increase":
-      return state + action.payload;
+      return {...state, count: state.count + action.payload};
     case "decrease":
-      return state + action.payload;
+      return {...state, count: state.count + action.payload};
     default: return state;
   }
 }
 
 const CounterScreen = () => {
   // NOTE variable, changes variable and reactively changes on screen
-  const [state, dispatch] = useReducer(reducer, 0)
-  const counter = state
+  const [state, dispatch] = useReducer(reducer, {count: 0})
+  const count = state.count
   return (
     <View>
       <Button title="Increase"
@@ -26,7 +26,7 @@ const CounterScreen = () => {
             onPress={()=>{
               dispatch({type: 'decrease', payload: -1})
             }}/>
-      <Text>Current Count: {counter}</Text>
+      <Text>Current Count: {count}</Text>
     </View>
   );
 }
