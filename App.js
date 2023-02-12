@@ -8,6 +8,7 @@ import ImgScreen from "./src/screens/ImgScreen";
 import CounterScreen from "./src/screens/CounterScreen.js";
 import colorScreen from "./src/screens/ColorScreen.js";
 import ColorChanger from "./src/screens/ColorChangerScreen.js";
+import TextScreen from "./src/screens/TextScreen.js";
 
 const navigator = createStackNavigator(
   {
@@ -17,7 +18,8 @@ const navigator = createStackNavigator(
     Img: ImgScreen,
     Counter: CounterScreen,
     Color: colorScreen,
-    ColorC: ColorChanger
+    ColorC: ColorChanger,
+    Text: TextScreen
   },
   {
     // NOTE initialRouteName tells the app what to show by default upon opening
