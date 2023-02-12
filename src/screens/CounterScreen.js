@@ -11,7 +11,7 @@ const CounterScreen = () => {
     <View>
       <Button title="Increase"
       onPress={()=>{
-        changeCount(counter + 1)
+        changeCount(counter + 2)
       }}/>
       <Button title="Decrease"
             onPress={()=>{
