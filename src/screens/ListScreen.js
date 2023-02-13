@@ -22,7 +22,7 @@ const ListScreen = () =>{
   return (
     <FlatList 
     // NOTE just by adding the word horizontal or horizontal={true} the list becomes side scrolling
-    // horizontal
+    horizontal
     // NOTE this hides the scroll bar
     showsHorizontalScrollIndicator={false}
     // NOTE this is the second way to assign keys. This happens at runtime. Keys must be unique, so if there were two objects with the same value this would not work.
